@@ -1,0 +1,329 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.containergeneral{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 100px;
+}
+
+.li{
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #f3ebeb;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+header {
+    background-color: #070f85;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 7s steps(40, end) infinite;
+    margin: 0;
+    font-size: 42px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+}
+
+h3{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+p {
+    margin-top: 10px;
+    color: #777;
+    font-size: 35px;
+}
+
+.p {
+    color: black;  
+    font-size: 25px;
+    text-align: justify;
+}
+
+.perfil-container {
+    overflow: hidden;
+}
+
+.texto {
+    overflow: hidden;
+}
+
+.perfil {
+    width: 35%;
+    margin-right: 20px;
+    float: left;
+}
+
+.map-container {
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+#habilidades li {
+    display: block;
+    margin-bottom: 10px; 
+}
+
+.progress-bar {
+    width: 200px; /* Ancho de la barra de progreso */
+    height: 20px; /* Altura de la barra de progreso */
+    border: 1px solid #ccc; /* Borde de la barra de progreso */
+}
+
+.progress {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+}
+
+.habilidades-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.experiencia-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre cada experiencia */
+}
+
+.experiencia {
+    background-color: #f9f9f9; /* Fondo claro para distinguir cada experiencia */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.experiencia h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.experiencia ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin: 0;
+}
+
+.experiencia p {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    color: #555;
+}
+
+.empresa ul li {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.habilidad {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.categoria {
+    flex: 1 1 45%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.categoria h3 {
+    margin: 0 0 10px 0;
+}
+
+.categoria ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; 
+    display: inline-block;
+}
+
+.categoria ul li {
+    margin-bottom: 10px;
+}
+
+.habilidad img {
+    margin-right: 60px;
+    float: left;
+}
+
+.footer-container {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container h2 {
+    margin: 0 0 15px 0;
+    color: #ffffff;
+}
+
+.contact-info {
+    margin: 5px 0;
+}
+
+.contact-info span {
+    display: inline-block;
+    color: #ffffff;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: #097bb0; 
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+img {
+    transition: transform 0.3s ease;
+}
+
+
+li img:hover {
+    transform: scale(1.1); 
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .perfil {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2, p {
+        font-size: 28px;
+    }
+
+    .container, .containergeneral {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .perfil {
+        width: 100%;
+        margin: 0 auto 20px auto;
+        float: none;
+    }
+
+    .perfil-container {
+        text-align: center;
+    }
+
+    .habilidades-grid, .experiencia-grid {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2, p {
+        font-size: 24px;
+    }
+
+    .categoria {
+        width: 100%;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2, p {
+        font-size: 20px;
+    }
+
+    .container, .containergeneral {
+        padding: 5px;
+    }
+
+    .li {
+        font-size: 16px;
+    }
+
+    .footer-container {
+        padding: 10px;
+    }
+
+    .habilidad img {
+        margin-right: 20px;
+        width: 50px;
+    }
+}
+
